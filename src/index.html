@@ -3,29 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <title>Coding Challenge - Sitemate</title>
   </head>
   <body>
-   
-   <!-- Simple pop-up dialog box containing a form -->
-   <dialog id="favDialog">
-    <h3 id="title">Are you sure you want to continue?</h3>
-    <form method="dialog">
-      <menu>
-        <button id="confirmBtn" value="Yes" onclick="buttonClick(this.value)">Yes</button>
-        <button id="cancelBtn" value="Cancel" onclick="buttonClick(this.value)">Cancel</button>
-      </menu>
-    </form>
-  </dialog>
+    <!-- Simple pop-up dialog box containing a form -->
+    <dialog id="favDialog" class="favDialog">
+      <h3 id="title" >Are you sure you want to continue?</h3>
+      <form method="dialog">
+        <menu>
+          <button 
+            id="confirmBtn" 
+            class="button confirmBtn"
+            value="Yes" 
+            onclick="buttonClick(this.value)"
+          >
+            Yes
+          </button>
+          <button
+            id="cancelBtn"
+            class="button cancelBtn"
+            value="Cancel"
+            onclick="buttonClick(this.value)"
+          >
+            Cancel
+          </button>
+        </menu>
+      </form>
+    </dialog>
 
     <menu>
-      <button id="clickButton" value="Are you sure you want to continue?" onclick="showPopup(this.value)">Click Me</button>
+      <button
+        id="clickBtn"
+        class="button clickBtn"
+        value="Are you sure you want to continue?"
+        onclick="showPopup(this.value)"
+      >
+        Click Me
+      </button>
       <!-- <button id="clickButton" value="Hi does this work?" onclick="showPopup(this.value)">Click Me</button> -->
     </menu>
 
     <output aria-live="polite"></output>
 
     <script src="test.js"></script>
-</body>
+  </body>
 </html>
