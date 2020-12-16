@@ -15,13 +15,16 @@ function showPopup(val){
   }
 }
 
-cancelBtn.addEventListener('click', function(){
-    outputBox.value = "You just clicked Cancel";
-});
+function buttonClick(val){
+  outputBox.value = `You just clicked "${val}"`;
+}
+// cancelBtn.addEventListener('click', function(){
+//     outputBox.value = `You just clicked "Cancel"`;
+// });
 
-confirmBtn.addEventListener('click', function(){
-    outputBox.value = "You just clicked Yes";
-});
+// confirmBtn.addEventListener('click', function(){
+//     outputBox.value = `You just clicked "Yes"`;
+// });
 
 
 // // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
