@@ -1,21 +1,19 @@
 var clickMeButton = document.getElementById('clickButton');
+
 var favDialog = document.getElementById('favDialog');
 var outputBox = document.querySelector('output');
 var confirmBtn = document.getElementById('confirmBtn');
 var cancelBtn = document.getElementById('cancelBtn');
+var modalTitle = document.getElementById('title');
 
-// "Update details" button opens the <dialog> modally
-clickMeButton.addEventListener('click', function onOpen() {
+function showPopup(val){
   if (typeof favDialog.showModal === "function") {
     favDialog.showModal();
+    title.innerHTML = val;
   } else {
     alert("The <dialog> API is not supported by this browser");
   }
-});
-
-// selectEl.addEventListener('change', function onSelect(e) {
-//   confirmBtn.value = selectEl.value;
-// });
+}
 
 cancelBtn.addEventListener('click', function(){
     outputBox.value = "You just clicked Cancel";

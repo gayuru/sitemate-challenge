@@ -10,7 +10,7 @@
    
    <!-- Simple pop-up dialog box containing a form -->
    <dialog id="favDialog">
-    <h3>Are you sure you want to continue?</h3>
+    <h3 id="title">Are you sure you want to continue?</h3>
     <form method="dialog">
       <menu>
         <button id="confirmBtn" value="default">Yes</button>
@@ -20,7 +20,8 @@
   </dialog>
 
     <menu>
-      <button id="clickButton">Click Me</button>
+      <button id="clickButton" value="Are you sure you want to continue?" onclick="showPopup(this.value)">Click Me</button>
+      <!-- <button id="clickButton" value="Hi does this work?" onclick="showPopup(this.value)">Click Me</button> -->
     </menu>
 
     <output aria-live="polite"></output>
