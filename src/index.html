@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <title>Coding Challenge - Sitemate</title>
+  </head>
+  <body>
+   
+   <!-- Simple pop-up dialog box containing a form -->
+   <dialog id="favDialog">
+    <h3>Are you sure you want to continue?</h3>
+    <form method="dialog">
+      <menu>
+        <button id="confirmBtn" value="default">Yes</button>
+        <button id="cancelBtn" value="cancel">Cancel</button>
+      </menu>
+    </form>
+  </dialog>
+
+    <menu>
+      <button id="clickButton">Click Me</button>
+    </menu>
+
+    <output aria-live="polite"></output>
+
+    <script src="test.js"></script>
+</body>
+</html>
